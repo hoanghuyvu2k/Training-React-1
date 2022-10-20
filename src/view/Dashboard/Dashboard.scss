@@ -1,0 +1,11 @@
+.dashboard{
+    .button-chart{
+        border: 1px solid black;
+        padding: 2px 8px;
+        &.active{
+            border: 1px solid #115BB2;
+            color: #115BB2;
+        }
+    }
+   
+}
