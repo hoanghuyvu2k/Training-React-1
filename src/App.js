@@ -8,7 +8,6 @@ import {
 import routes from "router/route.js";
 import DefaultLayout from "./components/Layout/DefaultLayout";
 import { useEffect, useState } from "react";
-
 function App() {
   const [listRoute, setListRoute] = useState([]);
   const getChildrenRoute = (childrenRoute) => {

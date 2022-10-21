@@ -1,18 +1,28 @@
 .input-setting{
-    position: relative;
+   
+   
     .title{
         color:#115BB2
     }
-    input{
+    .input-wrapper{
+        position: relative;
         width: 250px;
-        height: 40px;
-        border: 1px solid black;
-        border-radius: 4px;
-        background-color: #F6F6F6;
+        input{
+            width: 250px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: #F6F6F6;
+            padding: 0 10px;
+        }
     }
     .box-color{
         width: 40px;
         height: 40px;
-        color:red;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 4px;
+        cursor: pointer;
     }
 }
