@@ -1,0 +1,9 @@
+.setting{
+    padding: 30px 26px;
+    display: flex;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    .input-setting{
+        width: 50%;
+    }
+}
