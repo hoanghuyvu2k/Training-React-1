@@ -39,12 +39,12 @@ function InputSetting(props) {
       <div className="title">{props.title}</div>
       <div className="input-wrapper">
         <input type={props.type} value={value} onChange={handleChangeInput} />
-        {props.isValid ? (
-          <></>
-        ) : (
+        {props.isInvalid ? (
           <div className="absolute -bottom-4.5 text-red-600">
             {props.textInvalid}
           </div>
+        ) : (
+          <></>
         )}
         {props.typeInput === "colorPicker" ? (
           <div

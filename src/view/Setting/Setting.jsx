@@ -11,7 +11,7 @@ function Setting() {
       type: "text",
       title: "Title:",
       value: "",
-      isValid: false,
+
       textInvalid: "Invalid value!",
     },
     {
@@ -19,7 +19,6 @@ function Setting() {
       type: "text",
       title: "Email:",
       value: "",
-      isValid: false,
       textInvalid: "Invalid value!",
     },
     {
@@ -27,7 +26,6 @@ function Setting() {
       type: "text",
       title: "Background Color:",
       value: "#D0021B",
-      isValid: true,
       textInvalid: "Invalid value!",
     },
     {
@@ -35,7 +33,6 @@ function Setting() {
       type: "text",
       title: "Active date:",
       value: "",
-      isValid: false,
       textInvalid: "Invalid value!",
     },
   ]);
@@ -43,7 +40,7 @@ function Setting() {
     let inputs = structuredClone(listInput);
     let isValid = checkValidValue(value, index);
     inputs[index].value = value;
-    inputs[index].isValid = isValid;
+    inputs[index].isInvalid = !isValid;
     setListInput(inputs);
   };
   const checkValidValue = (value, index) => {
@@ -85,7 +82,7 @@ function Setting() {
             typeInput={input.typeInput}
             value={input.value}
             onChange={handleChangeValueInput}
-            isValid={input.isValid}
+            isInvalid={input.isInvalid}
             textInvalid={input.textInvalid}
           />
         );
